@@ -8,14 +8,15 @@ This repository contains the code implementation for the paper titled "Improving
 - [Setup](#setup)
 - [Usage](#usage)
 - [Acknowledgements](#acknowledgements)
+- [References](#references)
 
 ## Overview
 
 This repository provides the implementation for the algorithms presented in the paper "Improving Hyperbolic Representations via Gromov-Wasserstein Regularization".
 Our approach demonstrates consistent enhancements over current state-of-the-art methods across various tasks, including few-shot image classification, as well as semi-supervised graph link prediction and node classification. This code includes:
 
-- **protonet_gw** for few-shot image classification.
-- **hnn_gw** for semi-supervised graph link prediction and node classification.
+- **protonet_gw** for few-shot image classification. We apply our GW regularization on the hyperbolic ProtoNet model [[1]](https://openaccess.thecvf.com/content_CVPR_2020/papers/Khrulkov_Hyperbolic_Image_Embeddings_CVPR_2020_paper.pdf).
+- **hnn_gw** for semi-supervised graph link prediction and node classification. We consider the following three HNNs: the vanilla HNN [[2]](https://proceedings.neurips.cc/paper/2018/file/dbab2adc8f9d078009ee3fa810bea142-Paper.pdf), HGCN [[3]](https://proceedings.neurips.cc/paper_files/paper/2019/file/0415740eaa4d9decbc8da001d3fd805f-Paper.pdf), and HyboNet [[4]](https://arxiv.org/pdf/2105.14686).
 
 ## Setup
 
@@ -75,3 +76,15 @@ Our approach demonstrates consistent enhancements over current state-of-the-art 
 ## Acknowledgements
 
 YY and DZ acknowledge funding from National Natural Science Foundation of China (NSFC) under award number 12301117, WL acknowledges funding from the National Institute of Standards and Technology (NIST) under award number 70NANB22H021, and GL acknowledges funding from NSF award DMS 2124913.
+
+
+## References
+
+[1] [Khrulkov, V., Mirvakhabova, L., Ustinova, E., Oseledets, I., Lempitsky, V.: Hyperbolic image embeddings. In: IEEE Conf. Comput. Vis. Pattern Recog. (2020)](https://openaccess.thecvf.com/content_CVPR_2020/papers/Khrulkov_Hyperbolic_Image_Embeddings_CVPR_2020_paper.pdf)
+
+[2] [Ganea, O., Bécigneul, G., Hofmann, T.: Hyperbolic neural networks. Adv. Neural Inform. Process. Syst. 31, 5345–5355 (2018)](https://proceedings.neurips.cc/paper/2018/file/dbab2adc8f9d078009ee3fa810bea142-Paper.pdf)
+
+[3] [Chami, I., Ying, Z., Ré, C., Leskovec, J.: Hyperbolic graph convolutional neural networks. Adv. Neural Inform. Process. Syst. 32, 4868–4879 (2019)](https://proceedings.neurips.cc/paper_files/paper/2019/file/0415740eaa4d9decbc8da001d3fd805f-Paper.pdf)
+
+[4] [Chen, W., Han, X., Lin, Y., Zhao, H., Liu, Z., Li, P., Sun, M., Zhou, J.: Fully hyperbolic neural networks. In: Annu. Meeting Assoc. Comput. Linguistics. pp.5672–5686 (2022)](https://arxiv.org/pdf/2105.14686)
+
